@@ -1,0 +1,5 @@
+# Service data
+/data
+
+# Environment variables
+.env

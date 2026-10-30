@@ -1,0 +1,3 @@
+include:
+  - ./cloudflared/docker-compose.yml
+  - ./outline/docker-compose.yml
