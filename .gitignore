@@ -3,3 +3,6 @@
 
 # Environment variables
 .env
+
+# Environment variable backups
+env-backup.tar.gz

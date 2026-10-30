@@ -1,6 +1,8 @@
 services:
   outline:
     image: docker.getoutline.com/outlinewiki/outline:latest
+    container_name: outline
+    restart: unless-stopped
     env_file: ./.env
     expose:
       - "3000"
@@ -12,6 +14,8 @@ services:
 
   outline-redis:
     image: redis
+    container_name: outline-redis
+    restart: unless-stopped
     env_file: ./.env
     expose:
       - "6379"
@@ -23,6 +27,8 @@ services:
 
   outline-postgres:
     image: postgres:18
+    container_name: outline-postgres
+    restart: unless-stopped
     env_file: ./.env
     expose:
       - "5432"
