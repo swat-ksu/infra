@@ -1,0 +1,9 @@
+services:
+  discord-bot:
+    image: ghcr.io/swat-ksu/discord-bot:latest
+    container_name: discord-bot
+    restart: unless-stopped
+    environment:
+      - DISCORD_CLIENT_ID=${DISCORD_CLIENT_ID?}
+      - DISCORD_TOKEN=${DISCORD_TOKEN?}
+      - DISCORD_GUILD=${DISCORD_GUILD?}
