@@ -1,0 +1,27 @@
+issuer: http://localhost:5556 # https://dex.skeary.me
+
+storage:
+  type: sqlite3
+  config:
+    file: /var/dex/dex.db
+
+web:
+  http: 0.0.0.0:5556
+
+connectors:
+  - type: github
+    id: github
+    name: GitHub
+    config:
+      clientID: $GITHUB_CLIENT_ID
+      clientSecret: $GITHUB_CLIENT_SECRET
+      redirectURI: http://localhost:5556/callback # https://dex.skeary.me/callback
+      orgs:
+        - name: swat-ksu
+
+staticClients:
+  - id: outline
+    name: Outline
+    secretEnv: OIDC_CLIENT_SECRET
+    redirectURIs:
+      - http://localhost:3000/auth/oidc.callback # - https://outline.skeary.me/auth/oidc.callback
