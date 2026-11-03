@@ -27,8 +27,8 @@ Create a [swat-ksu GitHub OAuth app](https://github.com/organizations/swat-ksu/s
 | `OIDC_CLIENT_ID`     | `outline`                         |
 | `OIDC_CLIENT_SECRET` | `dex/.env`'s `OIDC_CLIENT_SECRET` |
 | `OIDC_AUTH_URI`      | `http://localhost:5556/auth`      |
-| `OIDC_TOKEN_URI`     | `http://dex:5556/token`           |
-| `OIDC_USERINFO_URI`  | `http://dex:5556/userinfo`        |
+| `OIDC_TOKEN_URI`     | `http://localhost:5556/token`           |
+| `OIDC_USERINFO_URI`  | `http://localhost:5556/userinfo`        |
 
 Once in production, update as follows:
 
