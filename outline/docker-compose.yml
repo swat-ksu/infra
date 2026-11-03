@@ -47,17 +47,4 @@ services:
       POSTGRES_USER: "user"
       POSTGRES_PASSWORD: "pass"
       POSTGRES_DB: "outline"
-
-  outline-dex:
-    image: ghcr.io/dexidp/dex:v2.46.1
-    container_name: dex
-    restart: unless-stopped
-    command: dex serve /etc/dex/config.yaml
-    env_file: ./.env
-    expose:
-      - "5556"
-    ports:
-      - "5556:5556" # remove once tested.
-    volumes:
-      - ./dex-config.yml:/etc/dex/config.yaml:ro
-      - ../data/dex:/var/dex
+      

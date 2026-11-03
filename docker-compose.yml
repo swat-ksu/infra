@@ -2,4 +2,5 @@ include:
   - ./beszel/docker-compose.yml
   - ./cloudflared/docker-compose.yml
   - ./discord-bot/docker-compose.yml
+  - ./dex/docker-compose.yml
   - ./outline/docker-compose.yml
