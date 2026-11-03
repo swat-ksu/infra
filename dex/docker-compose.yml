@@ -1,0 +1,15 @@
+services:
+  dex:
+    image: ghcr.io/dexidp/dex:v2.46.1
+    container_name: dex
+    restart: unless-stopped
+    command: dex serve /etc/dex/config.yaml
+    expose:
+      - "5556"
+    environment:
+      - GITHUB_CLIENT_ID=${GITHUB_CLIENT_ID?}
+      - GITHUB_CLIENT_SECRET=${GITHUB_CLIENT_SECRET?}
+      - OIDC_CLIENT_SECRET=${OIDC_CLIENT_SECRET?}
+    volumes:
+      - ./config.yml:/etc/dex/config.yaml:ro
+      - ../data/dex:/var/dex
