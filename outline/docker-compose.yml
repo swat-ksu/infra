@@ -9,10 +9,8 @@ services:
     volumes:
       - ../data/outline-storage:/var/lib/outline/data
     depends_on:
-      outline-postgres:
-        condition: service_healthy
-      outline-redis:
-        condition: service_healthy
+      - outline-postgres
+      - outline-redis
 
   outline-redis:
     image: redis
