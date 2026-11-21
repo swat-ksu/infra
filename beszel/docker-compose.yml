@@ -4,7 +4,7 @@ services:
     container_name: beszel
     restart: unless-stopped
     environment:
-      APP_URL: ${URL?}
+      APP_URL: https://beszel.swat-ksu.dev
       USER_EMAIL: ${USER_EMAIL?}
       USER_PASSWORD: ${USER_PASSWORD?}
     volumes:

@@ -32,8 +32,8 @@ Create a [swat-ksu GitHub OAuth app](https://github.com/organizations/swat-ksu/s
 
 Once in production, update as follows:
 
-- `https://dex.skeary.me` in Outline's `OIDC_AUTH_URI`, `OIDC_TOKEN_URI`, `OIDC_USERINFO_URI`.
-- `https://outline.skeary.me` in Outline's `URL`.
+- `https://dex.swat-ksu.dev` in Outline's `OIDC_AUTH_URI`, `OIDC_TOKEN_URI`, `OIDC_USERINFO_URI`.
+- `https://outline.swat-ksu.dev` in Outline's `URL`.
 - Update the URLs in `dex/config.yml`.
 
 ## Warnings

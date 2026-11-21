@@ -1,4 +1,4 @@
-issuer: https://dex.skeary.me
+issuer: https://dex.swat-ksu.dev
 
 storage:
   type: sqlite3
@@ -15,7 +15,7 @@ connectors:
     config:
       clientID: $GITHUB_CLIENT_ID
       clientSecret: $GITHUB_CLIENT_SECRET
-      redirectURI: https://dex.skeary.me/callback
+      redirectURI: https://dex.swat-ksu.dev/callback
       orgs:
         - name: swat-ksu
 
@@ -24,4 +24,4 @@ staticClients:
     name: Outline
     secretEnv: OIDC_CLIENT_SECRET
     redirectURIs:
-      - https://outline.skeary.me/auth/oidc.callback
+      - https://outline.swat-ksu.dev/auth/oidc.callback
