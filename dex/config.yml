@@ -22,6 +22,12 @@ connectors:
 staticClients:
   - id: outline
     name: Outline
-    secretEnv: OIDC_CLIENT_SECRET
+    secretEnv: OUTLINE_CLIENT_SECRET
     redirectURIs:
       - https://outline.swat-ksu.dev/auth/oidc.callback
+
+  - id: beszel
+    name: Beszel
+    secretEnv: BESZEL_CLIENT_SECRET
+    redirectURIs:
+      - https://beszel.swat-ksu.dev/api/oauth2-redirect
