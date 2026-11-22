@@ -8,6 +8,10 @@ storage:
 web:
   http: 0.0.0.0:5556
 
+oauth2:
+  alwaysShowLoginScreen: false
+  skipApprovalScreen: true
+
 connectors:
   - type: github
     id: github
