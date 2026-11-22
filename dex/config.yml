@@ -22,6 +22,7 @@ connectors:
       redirectURI: https://dex.swat-ksu.dev/callback
       orgs:
         - name: swat-ksu
+      teamNameField: slug
 
 staticClients:
   - id: outline
