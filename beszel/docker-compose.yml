@@ -5,8 +5,11 @@ services:
     restart: unless-stopped
     environment:
       APP_URL: https://beszel.swat-ksu.dev
-      DISABLE_PASSWORD_AUTH: true
+      USER_EMAIL: ${USER_EMAIL?}
+      USER_PASSWORD: ${USER_PASSWORD?}
       USER_CREATION: true
+      SHARE_ALL_SYSTEMS: true
+      OAUTH_DEFAULT_USER_ROLE: "readonly"
     volumes:
       - ../data/beszel-data:/beszel_data
       - ../data/beszel-socket:/beszel_socket
