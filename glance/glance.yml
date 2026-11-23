@@ -1,0 +1,52 @@
+server:
+  proxied: true
+
+theme:
+  background-color: 0 0 12
+  primary-color: 44 100 58
+
+pages:
+  - name: SwAT Startpage
+    width: slim
+    hide-desktop-navigation: true
+    center-vertically: true
+    columns:
+      - size: full
+        widgets:
+          - type: server-stats
+            servers:
+              - type: local
+                name: Server
+
+          - type: monitor
+            cache: 1m
+            title: Services
+            sites:
+              - title: Outline
+                url: https://outline.swat-ksu.dev/
+                icon: sh:outline
+              - title: Beszel
+                url: https://beszel.swat-ksu.dev/
+                icon: di:beszel
+              - title: Dex
+                url: https://dex.swat-ksu.dev/
+                icon: sh:dex-auth
+
+          - type: bookmarks
+            groups:
+              - title: General
+                links:
+                  - title: Website
+                    url: https://swat-ksu.github.io/
+                  - title: GitHub
+                    url: https://github.com/swat-ksu
+                  - title: Cloudflare
+                    url: https://dash.cloudflare.com/
+              - title: Socials
+                links:
+                  - title: Discord
+                    url: https://discord.gg/fcwTBYQvr7
+                  - title: Reddit
+                    url: https://www.reddit.com/u/swatksu/
+                  - title: Instagram
+                    url: https://www.instagram.com/swatksu

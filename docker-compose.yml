@@ -3,5 +3,6 @@ include:
   - ./cloudflared/docker-compose.yml
   - ./dex/docker-compose.yml
   - ./discord-bot/docker-compose.yml
+  - ./glance/docker-compose.yml
   - ./hermes/docker-compose.yml
   - ./outline/docker-compose.yml
